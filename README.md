@@ -12,9 +12,10 @@ Instagram Clone With Express * Prisma * React &amp; React Native
 - [x] Search by location
 - [x] Follow User
 - [x] UnFollow User
+- [x] Edit my profile
 - [ ] See user profile
+- [ ] See my profile
 - [ ] See the full photo
-- [ ] Edit my profile
 - [ ] Upload photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
