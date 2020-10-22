@@ -8,6 +8,12 @@ export default {
             const user = await prisma.user({email});
             if(user.loginSecret === secret){
                 //JWT
+                await prisma.updateUser({
+                    where: {id: user.id},
+                    data:{
+                        loginSecret:""
+                    }
+                });//login 성공하면 login secretKey 삭제
                 return generateToken(user.id);
             }else{
                 throw Error("Wrong email/secret combination");
