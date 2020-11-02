@@ -32,6 +32,15 @@ export default{
                     }
                 }
             }).aggregate().count()
+        },
+        commentCount:(parent)=>{
+            return prisma.commentsConnection({
+                where:{
+                    post:{
+                        id:parent.id
+                    }
+                }
+            }).aggregate().count()
         }
     }
 };
