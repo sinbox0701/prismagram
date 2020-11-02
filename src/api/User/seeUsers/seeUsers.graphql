@@ -1,3 +1,0 @@
-type Query{
-    seeUsers(id:String!):User!
-}

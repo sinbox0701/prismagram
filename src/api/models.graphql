@@ -18,6 +18,7 @@ type User {
   comments: [Comment!]!
   rooms: [Room!]!
   loginSecret: String!
+  postsCount:Int!
   createdAt: String
   updatedAt: String
 }
